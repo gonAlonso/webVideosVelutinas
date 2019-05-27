@@ -1,0 +1,10 @@
+/* https://developer.mozilla.org/es/docs/Web/CSS/object-fit */
+.carousel-item > img , .rounded-circle ,img.featurette-image.img-fluid{
+	object-fit: cover;	
+}
+
+
+#video-element {
+	margin: 0;
+	padding: 0 !important;
+}
