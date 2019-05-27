@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo de Video | Manejo en JavaScript</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</head>
+<body>
+<div class='container'>
+
+
+    <div id="video-demo-container">
+        <button id="upload-button">Select MP4 Video</button> 
+        <input type="file" id="file-input" accept="video/mp4" multiple />
+        <div id='video-list'>
+            <ul id='video-list-ul'>
+                <caption>Lista de Videos</caption>
+            </ul>
+        </div>
+        <video id="video-element" controls class="col-12">
+            <source type="video/mp4" src="trailer.mp4">
+        </video>
+        <canvas id="canvas-element"></canvas>
+        <div id="thumbnail-container">
+             Seek to <select id="set-video-seconds"></select> seconds <a id="download-link" href="#">Download Thumbnail</a>
+        </div>
+    </div>
+
+
+
+    <div id="coordenadas">
+    	<div id="xRes">Top:<span></span></div>
+    	<div id="yRes">Left:<span></span></div>
+    	<input type="button" id="getPos" value="Get X,Y"/>
+    	<img src="" id="myImg"/>
+    </div>
+</div>
+</body>
+</html>
+
+
